@@ -14,7 +14,7 @@ Before running the project, make sure you have the following installed:
 ### 1. Clone the repository
 
 ```batch     
-git clone <repository-url>
+git clone https://github.com/AlaaOdeh0/Playwright-Project.git
 cd <repository-directory>
 ```
 
@@ -29,14 +29,14 @@ npm install
 
 ### 3. Setup Environment Variables:
 Create a .env file in the root of the project and add the following environment variables:
-USERNAME=your_username
-PASSWORD=your_password
+```batch 
+USERNAME=standard_user
+PASSWORD=secret_sauce
+```
 
 ### 4. Global Setup:
-The globalSetup.ts file will log into the SauceDemo website and save the session state to a storageState.json file. This ensures that the session is preserved across multiple tests.
-
 Make sure to configure your globalSetup correctly by updating the username and password in the .env file.
-
+```batch 
 import { chromium } from '@playwright/test';
 import * as dotenv from 'dotenv';
 
@@ -54,12 +54,13 @@ async function globalSetup() {
 }
 
 export default globalSetup;
-
+```
 
 ### 5. Running Tests:
 To run the tests, use the following command:
+```batch 
 npx playwright test
-
+```
 
 
 ### 6. Configuration
@@ -70,7 +71,7 @@ Browser configuration (e.g., Chromium, Firefox)
 Test timeout and other Playwright settings
 
 Global setup file for storing login state
-
+```batch
 import { defineConfig } from '@playwright/test';
 import * as dotenv from 'dotenv';
 
@@ -89,3 +90,4 @@ export default defineConfig({
     { name: 'firefox', use: { browserName: 'firefox' } },
   ],
 });
+```
