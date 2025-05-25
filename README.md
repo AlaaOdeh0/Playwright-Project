@@ -11,11 +11,11 @@ Before running the project, make sure you have the following installed:
 
 ## Project Setup
 
-1. Clone the repository
+### 1. Clone the repository
 
-```bash
+
 git clone <repository-url>
-cd <repository-directory> ```
+cd <repository-directory> 
 
 ### 2. Install Dependencies:
 Run the following command to install the required dependencies:
