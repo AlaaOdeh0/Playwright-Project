@@ -11,7 +11,7 @@ Before running the project, make sure you have the following installed:
 
 ## Project Setup
 
-### 1. Clone the repository
+1. Clone the repository
 
 ```bash
 git clone <repository-url>
