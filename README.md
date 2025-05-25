@@ -17,18 +17,17 @@ Before running the project, make sure you have the following installed:
 git clone <repository-url>
 cd <repository-directory>
 
-
-Install Dependencies:
+### 2. Install Dependencies:
 Run the following command to install the required dependencies:
 npm install
 
 
-Setup Environment Variables:
+### 3. Setup Environment Variables:
 Create a .env file in the root of the project and add the following environment variables:
 USERNAME=your_username
 PASSWORD=your_password
 
-Global Setup
+### 4. Global Setup:
 The globalSetup.ts file will log into the SauceDemo website and save the session state to a storageState.json file. This ensures that the session is preserved across multiple tests.
 
 Make sure to configure your globalSetup correctly by updating the username and password in the .env file.
@@ -52,13 +51,13 @@ async function globalSetup() {
 export default globalSetup;
 
 
-Running Tests
+### 5. Running Tests:
 To run the tests, use the following command:
 npx playwright test
 
 
 
-Configuration
+### 6. Configuration
 The test configuration is defined in playwright.config.ts, where you can specify settings like:
 
 Browser configuration (e.g., Chromium, Firefox)
