@@ -13,15 +13,18 @@ Before running the project, make sure you have the following installed:
 
 ### 1. Clone the repository
 
- ```batch     
+```batch     
 git clone <repository-url>
-cd <repository-directory>``` 
+cd <repository-directory>
+```
 
 
 
 ### 2. Install Dependencies:
 Run the following command to install the required dependencies:
+```batch     
 npm install
+```
 
 
 ### 3. Setup Environment Variables:
