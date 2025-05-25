@@ -13,10 +13,10 @@ Before running the project, make sure you have the following installed:
 
 ### 1. Clone the repository
 
-<pre> ```batch     
+ ```batch     
 git clone <repository-url>
-cd <repository-directory> 
-  ``` </pre>
+cd <repository-directory>``` 
+
 
 
 ### 2. Install Dependencies:
