@@ -13,9 +13,11 @@ Before running the project, make sure you have the following installed:
 
 ### 1. Clone the repository
 
-
+<pre> ```batch     
 git clone <repository-url>
 cd <repository-directory> 
+  ``` </pre>
+
 
 ### 2. Install Dependencies:
 Run the following command to install the required dependencies:
